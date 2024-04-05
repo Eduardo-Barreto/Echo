@@ -39,20 +39,21 @@ def ping():
 @app.route("/echo", methods=["POST"])
 def echo():
     data = request.json
+    text = data.get("dados")
 
     ip_address = request.remote_addr
 
     log_entry = {
         "timestamp": str(datetime.now()),
         "ip_address": ip_address,
-        "action": "connect",
+        "action": "echo",
         "parameters": data,
     }
     logger.info(log_entry)
 
     db.insert(log_entry)
 
-    return data
+    return {"resposta": text}
 
 
 @app.route("/dash")

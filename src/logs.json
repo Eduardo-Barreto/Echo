@@ -1,1 +1,1 @@
-{"_default": {}}
+{"_default": {"1": {"timestamp": "2024-04-05 14:42:38.610587", "ip_address": "127.0.0.1", "action": "ping", "parameters": {}}, "2": {"timestamp": "2024-04-05 14:42:42.375965", "ip_address": "127.0.0.1", "action": "connect", "parameters": {"dados": "ola"}}}}
