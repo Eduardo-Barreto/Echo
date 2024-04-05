@@ -19,5 +19,5 @@ flask --app app.py run
 
 # Demonstração
 
-https://github.com/Eduardo-Barreto/Echo/assets/34964398/2ded378a-8a00-45c9-9e2e-af93fbf4a298
+https://github.com/Eduardo-Barreto/Echo/assets/34964398/40ab35f0-5e93-48dc-b9b4-a6af3d81bef3
 
