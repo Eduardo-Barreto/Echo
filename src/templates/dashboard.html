@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logs</title>
+    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css" />
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Logs</h1>
+            <button class="button is-danger" hx-delete="/logs/all">Delete All</button>
+            <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Timestamp</th>
+                        <th>IP Address</th>
+                        <th>Action</th>
+                        <th>Parameters</th>
+                    </tr>
+                </thead>
+                <tbody hx-get="/info" hx-trigger="load" hx-swap="innerHTML"></tbody>
+            </table>
+        </div>
+    </section>
+</body>
+
+</html>
